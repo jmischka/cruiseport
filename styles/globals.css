@@ -1,26 +1,86 @@
+@font-face {
+  font-family: 'BrotherReg';
+  src: local('BrotherReg'),
+      url('../assets/Brother1816-Regular.woff2') format('woff2'),
+      url('../assets/Brother1816-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BrotherBold';
+  src: local('BrotherBold'),
+      url('../assets/Brother1816-Medium.woff2') format('woff2'),
+      url('../assets/Brother1816-Medium.woff') format('woff');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'IvyMode';
+  src: local('IvyMode'),
+      url('../assets/IvyMode-Regular.woff2') format('woff2'),
+      url('../assets/IvyMode-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: BrotherReg, 'Helvetica Neue',
+    sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  --cpturqoise1: #9bd0c5;
+  --cpturqoise2: #7dc2c4;
+  --cplightblue1: #448bab;
+  --cplightblue2: #326993;
+  --cpdrkblue1: #294b7e;
+  --cpdrkblue2: #2e3469;
+  background-color: #f4f2ea;
+}
+
+h1 {
+  margin: 0;
+  font-family: IvyMode, 'serif';
+  font-size: 3em;
+  line-height: 1;;
+}
+
+p {
+  margin: 0;
+  font-size: 3em;
 }
 
 a {
-  color: inherit;
+  display: block;
+  font-size: 1.6em;
+  line-height: 1;
+  padding: 0 18px;
   text-decoration: none;
+  text-transform: uppercase;
+  transition-duration: .3s;
+  color: var(--cpdrkblue2);
 }
 
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+a:hover,
+a.active {
+  color: white;
 }
