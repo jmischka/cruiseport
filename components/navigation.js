@@ -31,27 +31,27 @@ function Navigation() {
                     <ul>
                         <li>
                             <Link href="/">
-                                <a name="home" className={linkState.home ? 'active' : 'normal'} onClick={handleLinkClick}>Home</a>
+                                <a name="home" className={linkState.home ? 'active' : null} onClick={handleLinkClick}>Home</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/about">
-                                <a name="about" className={linkState.about ? 'active' : 'normal'} onClick={handleLinkClick}>About</a>
+                                <a name="about" className={linkState.about ? 'active' : null} onClick={handleLinkClick}>About</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/services">
-                                <a name="services" className={linkState.services ? 'active' : 'normal'} onClick={handleLinkClick}>Services</a>
+                                <a name="services" className={linkState.services ? 'active' : null} onClick={handleLinkClick}>Services</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/careers">
-                                <a className={linkState.careers ? 'active' : 'normal'}>Careers</a>
+                                <a name="careers" className={linkState.careers ? 'active' : null} onClick={handleLinkClick}>Careers</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/contact">
-                                <a className={linkState.contact ? 'active' : 'normal'}>Contact Us</a>
+                                <a name="contact" className={linkState.contact ? 'active' : null} onClick={handleLinkClick}>Contact Us</a>
                             </Link>
                         </li>
                     </ul>
