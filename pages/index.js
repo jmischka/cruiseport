@@ -1,12 +1,12 @@
 import client from "../client";
-import FeatureImage from '../components/featureImage'
+import HomeFeatureImage from "../components/homeFeatureImage";
 import styles from '../styles/Home.module.css'
 
 export default function Home({homeData}) {
-  const mainImge = homeData.mainImage;
+  const mainImage = homeData.mainImage;
   return (
     <div>
-      <FeatureImage image={mainImge} />
+      <HomeFeatureImage image={mainImage} />
       <h1>Home Page</h1>
     </div>
   )
