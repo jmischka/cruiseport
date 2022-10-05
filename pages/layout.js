@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     const defaultState = {home: false, about: false, services: false, careers: false, contact: false};
 
     const handleLinkClick = (e) => {
-        let clickValue = e.target.name;
+        let clickValue = e.target.attributes.name.value;
         let object = {
             [clickValue]: true,
         }

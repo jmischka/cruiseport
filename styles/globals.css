@@ -66,6 +66,15 @@ h1 {
   color: var(--cpdrkblue1);
 }
 
+h2 {
+  margin: 0;
+  font-family: IvyMode, 'serif';
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
+  color: var(--cpdrkblue1);
+}
+
 p {
   margin: 0 0 18px;
   font-size: 18px;
