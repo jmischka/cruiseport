@@ -1,22 +1,13 @@
-import { useState } from 'react'
+import { useContext } from 'react'
 import styles from '../styles/Navigation.module.css'
 import brandIcon from '../assets/brand-icon.png'
 import logo from '../assets/Logo-Type.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import { NavigationContext } from './navigation-context'
 
 function Navigation() {
-    const [linkState, setLinkState] = useState({home: true, about: false, services: false, careers: false, contact: false});
-    const defaultState = {home: false, about: false, services: false, careers: false, contact: false};
-
-    const handleLinkClick = (e) => {
-        let clickValue = e.target.name;
-        let object = {
-            [clickValue]: true,
-        }
-        const newState = Object.assign(defaultState, object);
-        setLinkState(newState);
-    }
+    const {linkState, handleLinkClick} = useContext(NavigationContext);
 
     return (
         <div className={styles.wrapper}>
