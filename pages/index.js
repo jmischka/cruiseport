@@ -16,6 +16,8 @@ export default function Home({homeData}) {
   const servicesTitle = homeData.homeServicesTitle;
   const servicesIntro = homeData.homeServicesText;
   const servicesList = homeData.homeServicesReference;
+  const testimonials = homeData.homeTestimonials;
+
   const {handleLinkClick} = useContext(NavigationContext);
 
   return (
@@ -39,7 +41,7 @@ export default function Home({homeData}) {
         })}
       </ul>
       <CruiseShipSpacer />
-      <TestimonialSlider />
+      <TestimonialSlider testimonials={testimonials} />
     </div>
   )
 }

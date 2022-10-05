@@ -1,6 +1,6 @@
 .wrapper {
     position: relative;
-    margin: 100px 0;
+    margin: 135px 0;
     width: 100%;
     height: auto;
     background-color: var(--cpturqoise2);
@@ -11,5 +11,68 @@
     margin: 0 auto;
     width: 100%;
     max-width: 1475px;
-    padding: 75px;
+    padding: 75px 100px;
+}
+
+.sliderWindow {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slideTray {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 400%;
+    height: auto;
+}
+
+.testimonial {
+    position: relative;
+    display: block;
+    margin: 0;
+    font-size: 34px;
+    line-height: 1.3;
+    font-weight: normal;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 50px 0;
+    color: var(--cpoffwhite);
+}
+
+.directionalForward,
+.directionalBack {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    transform: translateY(-50%) rotate(45deg);
+    opacity: .6;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+.directionalForward {
+    left: calc(100% - 100px);
+    border-top: 5px solid var(--cpoffwhite);
+    border-right: 5px solid var(--cpoffwhite);
+}
+
+.directionalBack {
+    left: 50px;
+    border-left: 5px solid var(--cpoffwhite);
+    border-bottom: 5px solid var(--cpoffwhite);
+}
+
+.directionalForward:hover,
+.directionalBack:hover {
+    opacity: 1;
 }
