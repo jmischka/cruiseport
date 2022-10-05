@@ -5,8 +5,7 @@ function About({aboutData}) {
     const mainImage = aboutData.mainImage;
     return (
         <div>
-            <FeatureImage image={mainImage} />
-            <h1>About Page</h1>
+            <FeatureImage image={mainImage} /> 
         </div>
     )
   }

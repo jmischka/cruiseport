@@ -1,13 +1,18 @@
 import client from "../client";
 import HomeFeatureImage from "../components/homeFeatureImage";
+import PageHeader from "../components/pageHeader";
 import styles from '../styles/Home.module.css'
 
 export default function Home({homeData}) {
   const mainImage = homeData.mainImage;
+  const pageTitle = homeData.homeIntroTitle;
+  const pageIntro = homeData.homeIntroText;
+  const headerButton = homeData.homeIntroButtonText;
+
   return (
     <div>
       <HomeFeatureImage image={mainImage} />
-      <h1>Home Page</h1>
+      <PageHeader pagetitle={pageTitle} intro={pageIntro} headerButton={headerButton} />
     </div>
   )
 }
