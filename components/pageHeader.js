@@ -5,12 +5,11 @@ import { NavigationContext } from './navigation-context';
 
 function PageHeader({pagetitle, intro, headerButton}) {
     const {handleLinkClick} = useContext(NavigationContext);
-    const pageIntro = intro[0].children[0].text;
     
     return (
         <div className={styles.wrapper}>
             <h1>{pagetitle}</h1>
-            <p>{pageIntro}</p>
+            {intro.map((block, idx) => <p key={idx}>{block.children[0].text}</p>)}
             {headerButton ? <Link href="/about"><a name="about" className={styles.pageHeaderButton} onClick={handleLinkClick}>{headerButton}</a></Link> : null}
         </div>
     )
