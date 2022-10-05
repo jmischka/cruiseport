@@ -5,6 +5,7 @@ import CruiseShipSpacer from "../components/cruiseship-spacer";
 import HomeFeatureImage from "../components/homeFeatureImage";
 import { NavigationContext } from "../components/navigation-context";
 import PageHeader from "../components/pageHeader";
+import TestimonialSlider from "../components/testimonial-slider";
 import styles from '../styles/Home.module.css'
 
 export default function Home({homeData}) {
@@ -37,6 +38,8 @@ export default function Home({homeData}) {
           )
         })}
       </ul>
+      <CruiseShipSpacer />
+      <TestimonialSlider />
     </div>
   )
 }

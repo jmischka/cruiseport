@@ -1,0 +1,15 @@
+.wrapper {
+    position: relative;
+    margin: 100px 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--cpturqoise2);
+}
+
+.innerWrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1475px;
+    padding: 75px;
+}
