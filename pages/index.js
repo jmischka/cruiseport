@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useContext } from "react";
 import client from "../client";
 import CruiseShipSpacer from "../components/cruiseship-spacer";
+import CruiseportForm from "../components/cruisport-form";
 import HomeFeatureImage from "../components/homeFeatureImage";
 import { NavigationContext } from "../components/navigation-context";
 import PageHeader from "../components/pageHeader";
@@ -42,6 +43,8 @@ export default function Home({homeData}) {
       </ul>
       <CruiseShipSpacer />
       <TestimonialSlider testimonials={testimonials} />
+      <CruiseShipSpacer />
+      <CruiseportForm />
     </div>
   )
 }

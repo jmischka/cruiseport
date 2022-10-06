@@ -1,0 +1,39 @@
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1475px;
+    height: auto;
+    padding: 100px 25px 50px;
+}
+
+.formTitle {
+    padding: 0 25px;
+}
+
+.flexWrapper {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.formWrapper,
+.formImageWrapper {
+    position: relative;
+    margin: 0;
+    width: 66.666%;
+    height: auto;
+    padding: 0 25px;
+}
+
+.formWrapper {
+    width: 66.666%;
+    order: 1;
+}
+
+.formImageWrapper {
+    width: 33.333%;
+    order: 2;
+}

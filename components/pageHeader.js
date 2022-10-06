@@ -9,7 +9,7 @@ function PageHeader({pagetitle, intro, headerButton}) {
     return (
         <div className={styles.wrapper}>
             <h1>{pagetitle}</h1>
-            {intro.map((block, idx) => <p key={idx}>{block.children[0].text}</p>)}
+            {intro ? intro.map((block, idx) => <p key={idx}>{block.children[0].text}</p>) : null}
             {headerButton ? <Link href="/about"><a name="about" className={styles.pageHeaderButton} onClick={handleLinkClick}>{headerButton}</a></Link> : null}
         </div>
     )
