@@ -37,3 +37,26 @@
     width: 33.333%;
     order: 2;
 }
+
+.cpform {
+    position: relative;
+    margin: 50px 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.cpform input {
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: normal;
+    width: calc(50% - 10px);
+    border: none;
+    padding: 6px;
+    outline: 1px solid var(--cpdrkblue1);
+    background-color: transparent;
+}

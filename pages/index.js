@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useContext } from "react";
 import client from "../client";
+import imageUrlBuilder from '@sanity/image-url'
 import CruiseShipSpacer from "../components/cruiseship-spacer";
 import CruiseportForm from "../components/cruisport-form";
 import HomeFeatureImage from "../components/homeFeatureImage";
@@ -8,6 +9,10 @@ import { NavigationContext } from "../components/navigation-context";
 import PageHeader from "../components/pageHeader";
 import TestimonialSlider from "../components/testimonial-slider";
 import styles from '../styles/Home.module.css'
+
+function urlFor (source) {
+  return imageUrlBuilder(client).image(source)
+}
 
 export default function Home({homeData}) {
   const mainImage = homeData.mainImage;
@@ -33,7 +38,9 @@ export default function Home({homeData}) {
             <li key={idx}>
               <Link href="/services">
                 <a name="services" className={styles.homeServiceLink} onClick={handleLinkClick}>
-                  <span name="services" className={styles.linkColor}></span>
+                  <figure name="services" className={styles.homeServiceImage}>
+                    <img name="services" src={urlFor(listItem.homepageServiceImage)} />
+                  </figure>
                   <span name="services" className={styles.homeServiceTitle}>{listItem.homepageServiceTitle}</span>
                 </a>
               </Link>
