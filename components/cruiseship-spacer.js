@@ -1,8 +1,14 @@
+import Image from 'next/image';
+import brandIcon from '../assets/brand-icon.png'
 import styles from '../styles/CruiseShipSpacer.module.css'
 
-function CruiseShipSpacer() {
+function CruiseShipSpacer({offset}) {
     return (
-        <div className={styles.wrapper}></div>
+        <div className={styles.wrapper}>
+            <figure style={{left: `${offset}%`}}>
+                <Image src={brandIcon} />
+            </figure>
+        </div>
     )
 }
 

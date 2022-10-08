@@ -1,15 +1,27 @@
 import client from "../client";
+import CruiseShipSpacer from "../components/cruiseship-spacer";
 import FeatureImage from '../components/featureImage'
 import PageHeader from "../components/pageHeader";
+import Service from "../components/service";
 
 function Services({servicesData}) {
     const mainImge = servicesData.mainImage;
     const pageTitle = servicesData.servicesIntroTitle;
     const pageIntro = servicesData.servicesIntroText;
+    const services = servicesData.servicesOffered;
+
     return (
         <div>
             <FeatureImage image={mainImge} />
             <PageHeader pagetitle={pageTitle} intro={pageIntro} />
+            {services.map((service,idx) => {
+              return (
+                <>
+                  <Service key={idx} serviceTitle={service.serviceTitle} />
+                  <CruiseShipSpacer key={idx} offset={(idx + 1) * 20} />
+                </>
+              )
+            })}
         </div>
     )
   }

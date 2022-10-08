@@ -23,6 +23,7 @@ export default function Home({homeData}) {
   const servicesIntro = homeData.homeServicesText;
   const servicesList = homeData.homeServicesReference;
   const testimonials = homeData.homeTestimonials;
+  const formImage = homeData.footerContactImage;
 
   const {handleLinkClick} = useContext(NavigationContext);
 
@@ -30,7 +31,7 @@ export default function Home({homeData}) {
     <div>
       <HomeFeatureImage image={mainImage} />
       <PageHeader pagetitle={pageTitle} intro={pageIntro} headerButton={headerButton} />
-      <CruiseShipSpacer />
+      <CruiseShipSpacer offset={30} />
       <PageHeader pagetitle={servicesTitle} intro={servicesIntro} />
       <ul className={styles.servicesList}>
         {servicesList.map((listItem, idx) => {
@@ -48,10 +49,10 @@ export default function Home({homeData}) {
           )
         })}
       </ul>
-      <CruiseShipSpacer />
+      <CruiseShipSpacer offset={60} />
       <TestimonialSlider testimonials={testimonials} />
-      <CruiseShipSpacer />
-      <CruiseportForm />
+      <CruiseShipSpacer offset={85} />
+      <CruiseportForm formImage={formImage} />
     </div>
   )
 }

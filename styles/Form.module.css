@@ -36,7 +36,25 @@
 .formImageWrapper {
     width: 33.333%;
     order: 2;
-    background-color: turquoise;
+}
+
+.formImageWrapper figure,
+.formImageWrapper figure img {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.formImageWrapper figure {
+    left: 0;
+    top: 0;
+}
+
+.formImageWrapper figure img {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .cpform {

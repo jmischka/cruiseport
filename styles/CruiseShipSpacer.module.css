@@ -4,4 +4,20 @@
     width: 100%;
     height: 1px;
     background-color: var(--cpdrkblue1);
+    overflow: visible;
+}
+
+.wrapper figure {
+    position: absolute;
+    margin: 0;
+    top: -44px;
+    width: 150px;
+    height: auto;
+}
+
+.wrapper figure img {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: auto;
 }

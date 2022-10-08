@@ -1,4 +1,5 @@
 import client from "../client";
+import CruiseportForm from "../components/cruisport-form";
 import FeatureImage from '../components/featureImage'
 import PageHeader from "../components/pageHeader";
 
@@ -9,7 +10,7 @@ function Contact({contactData}) {
     return (
         <div>
             <FeatureImage image={mainImage} />
-            <PageHeader pagetitle={pageTitle} intro={pageIntro} />
+            <CruiseportForm />
         </div>
     )
   }

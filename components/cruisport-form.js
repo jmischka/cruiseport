@@ -1,7 +1,13 @@
+import client from "../client"
+import imageUrlBuilder from '@sanity/image-url'
 import { useState } from 'react';
 import styles from '../styles/Form.module.css'
 
-function CruiseportForm() {
+function urlFor (source) {
+    return imageUrlBuilder(client).image(source)
+}
+
+function CruiseportForm({formImage}) {
     const [inputs, setInputs] = useState({firstName: '', lastName: '', company: '', title: '', email: '', phone: '', message: ''})
 
     const handleInputChange = (e) => {
@@ -33,7 +39,9 @@ function CruiseportForm() {
                         <button type='submit'>Connect</button>
                     </form>
                 </div>
-                <div className={styles.formImageWrapper}></div>
+                <div className={styles.formImageWrapper}>
+                    {formImage ? <figure><img src={urlFor(formImage)} /></figure> : null}
+                </div>
             </div>
         </div>
     )

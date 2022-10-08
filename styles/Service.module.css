@@ -1,0 +1,38 @@
+.wrapper {
+    position: relative;
+    margin: 100px auto 0;
+    width: 100%;
+    max-width: 1450px;
+    height: auto;
+}
+
+.serviceHeader {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.serviceTitle,
+.serviceImage {
+    position: relative;
+    margin: 0;
+    width: 50%;
+    height: auto;
+    padding: 25px;
+}
+
+.serviceTitle {
+    order: 1;
+}
+
+.serviceImage {
+    order: 2
+}
+
+.serviceTitle h1 {
+    margin: 0 0 25px !important;
+}
