@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     height: auto;
 }
@@ -34,6 +35,7 @@
 
 .footerBranding {
     width: 33.333%;
+    max-width: 300px;
     padding: 0 25px;
 }
 
@@ -48,10 +50,19 @@
 .information,
 .contact {
     position: relative;
-    margin: 0;
-    width: 33.333%;
     height: auto;
     padding: 0 25px;
+}
+
+.site {
+    margin: 0 0 0 calc((100% / 12) * 1);
+    width: calc((100% / 12) * 3); 
+}
+
+.information,
+.contact {
+    margin: 0;
+    width: calc((100% / 12) * 4);
 }
 
 .navHeader {

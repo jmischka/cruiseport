@@ -1,4 +1,6 @@
 import { useContext } from 'react'
+import logo from '../assets/Logo-Type.png'
+import Image from 'next/image'
 import Link from 'next/link';
 import styles from '../styles/FooterStyles.module.css'
 import CruiseShipSpacer from './cruiseship-spacer';
@@ -12,7 +14,9 @@ function Footer() {
             <div className={styles.innerWrapper}>
                 <CruiseShipSpacer offset={2} />
                 <div className={styles.footerNavWrapper}>
-                    <div className={styles.footerBranding}></div>
+                    <div className={styles.footerBranding}>
+                        <Image src={logo} />
+                    </div>
                     <div className={styles.footerNavigation}>
                         <div className={styles.site}>
                             <span className={styles.navHeader}>Site</span>
