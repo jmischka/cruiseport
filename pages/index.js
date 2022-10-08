@@ -9,6 +9,7 @@ import { NavigationContext } from "../components/navigation-context";
 import PageHeader from "../components/pageHeader";
 import TestimonialSlider from "../components/testimonial-slider";
 import styles from '../styles/Home.module.css'
+import Footer from "../components/footer";
 
 function urlFor (source) {
   return imageUrlBuilder(client).image(source)

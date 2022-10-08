@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useState } from 'react';
+import Footer from '../components/footer';
 import Navigation from "../components/navigation";
 import { NavigationProvider } from '../components/navigation-context';
 
@@ -25,6 +26,7 @@ export default function Layout({ children }) {
         <NavigationProvider value={{linkState, handleLinkClick}}>
           <Navigation />
           <main>{children}</main>
+          <Footer />
         </NavigationProvider>
       </>
     )

@@ -1,0 +1,99 @@
+.wrapper {
+    position: relative;
+    margin: 50px 0 0;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    background-color: #bbdbdf;
+}
+
+.innerWrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1450px;
+    height: auto;
+}
+
+.footerNavWrapper {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.footerBranding,
+.footerNavigation {
+    position: relative;
+    margin: 0;
+    height: auto;
+}
+
+.footerBranding {
+    width: 33.333%;
+    padding: 0 25px;
+}
+
+.footerNavigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 66.666%;
+}
+
+.site,
+.information,
+.contact {
+    position: relative;
+    margin: 0;
+    width: 33.333%;
+    height: auto;
+    padding: 0 25px;
+}
+
+.navHeader {
+    display: block;
+    margin: -65px 0 50px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: normal;
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    color: var(--cpdrkblue1);
+}
+
+.navList {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navList li {
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: normal;
+    padding: 0;
+    color: var(--cpdrkblue1);
+}
+
+.navList .phone {
+    margin: 0 0 40px;
+}
+
+.navList a {
+    text-transform: none !important;
+    color: var(--cpdrkblue1) !important;
+    padding: 0;
+}
+
+.navList a:hover {
+    color: var(--cpdrkblue1) !important;
+    text-decoration: underline;
+}

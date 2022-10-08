@@ -1,5 +1,6 @@
 import client from "../client";
 import CruiseShipSpacer from "../components/cruiseship-spacer";
+import CruiseportForm from "../components/cruisport-form";
 import FeatureImage from '../components/featureImage'
 import PageHeader from "../components/pageHeader";
 import Service from "../components/service";
@@ -9,6 +10,7 @@ function Services({servicesData}) {
     const pageTitle = servicesData.servicesIntroTitle;
     const pageIntro = servicesData.servicesIntroText;
     const services = servicesData.servicesOffered;
+    const formImage = servicesData.servicesFooterContactImage;
 
     return (
         <div>
@@ -22,6 +24,7 @@ function Services({servicesData}) {
                 </>
               )
             })}
+            <CruiseportForm formImage={formImage} />
         </div>
     )
   }
