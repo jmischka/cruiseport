@@ -19,6 +19,15 @@ function HomeFeatureImage({image}) {
             </div>
             <div className={styles.homeWelcomeTicker}>
                 <span>Welcome</span>
+                <span>Bienvenidos</span>
+                <span>Wilkommen</span>
+                <span>Yokoso</span>
+                <span>Benvenuto</span>
+                <span>Merhaba</span>
+                <span>Kalos</span>
+                <span>Irthate</span>
+                <span>Huanying</span>
+                <span>Shalom</span>
             </div>
         </div>
     )
