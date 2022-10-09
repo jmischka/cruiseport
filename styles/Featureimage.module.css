@@ -42,7 +42,7 @@
     bottom: 35px;
     width: 100%;
     height: auto;
-    animation: welcomeAnimation 7s infinite;
+    animation: welcomeAnimation 25s linear infinite;
 }
 
 .homeWelcomeTicker span {
