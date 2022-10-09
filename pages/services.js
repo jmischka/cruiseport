@@ -19,7 +19,13 @@ function Services({servicesData}) {
             {services.map((service,idx) => {
               return (
                 <>
-                  <Service key={idx} serviceTitle={service.serviceTitle} />
+                  <Service 
+                    key={idx} 
+                    serviceTitle={service.serviceTitle} 
+                    serviceImage={service.servicePageImage} 
+                    serviceIntro={service.serviceIntro} 
+                    serviceItems={service.serviceOffered}
+                  />
                   <CruiseShipSpacer key={idx} offset={(idx + 1) * 20} />
                 </>
               )

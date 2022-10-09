@@ -6,7 +6,8 @@
     height: auto;
 }
 
-.serviceHeader {
+.serviceHeader,
+.serviceList {
     position: relative;
     margin: 0;
     display: flex;
@@ -35,4 +36,39 @@
 
 .serviceTitle h1 {
     margin: 0 0 25px !important;
+}
+
+.serviceImage figure,
+.serviceImage figure img {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.serviceList ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.listItem {
+    margin: 0 0 25px;
+    width: 50%;
+    height: auto;
+    padding: 0 25px;
+}
+
+.listItem:before {
+    content: "";
+    display: block;
+    margin: 25px 0;
+    width: 35px;
+    height: 1px;
+    background-color: var(--cpdrkblue1);
 }
