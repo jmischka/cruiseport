@@ -1,11 +1,15 @@
 import client from "../client";
 import FeatureImage from '../components/featureImage'
+import PageHeader from "../components/pageHeader";
 
 function About({aboutData}) {
     const mainImage = aboutData.mainImage;
+    const pageTitle = aboutData.aboutIntroTitle;
+    const pageIntro = aboutData.aboutIntroText;
     return (
         <div>
-            <FeatureImage image={mainImage} /> 
+            <FeatureImage image={mainImage} />
+            <PageHeader pagetitle={pageTitle} intro={pageIntro} />
         </div>
     )
   }

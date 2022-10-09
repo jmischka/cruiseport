@@ -75,3 +75,19 @@
     margin: 0;
     font-size: 24px;
 }
+
+.welcomeTicker {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 0;
+    bottom: -25px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .welcomeTicker span {
+    display: block;
+    position: relative;
+  }
