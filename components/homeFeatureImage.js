@@ -17,7 +17,7 @@ function HomeFeatureImage({image}) {
                 <span className={styles.featureImageTitleMajor}>Best On Land And In Port</span>
                 <span className={styles.featureImageTitleLocation}>Miami, South & Central Florida</span>
             </div>
-            <div className={styles.welcomeTicker}>
+            <div className={styles.homeWelcomeTicker}>
                 <span>Welcome</span>
             </div>
         </div>
