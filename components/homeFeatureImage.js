@@ -1,6 +1,6 @@
 import client from '../client'
 import imageUrlBuilder from '@sanity/image-url'
-import styles from '../styles/FeatureImage.module.css'
+import styles from '../styles/Featureimage.module.css'
 
 function urlFor (source) {
     return imageUrlBuilder(client).image(source)
