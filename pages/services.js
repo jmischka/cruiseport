@@ -4,6 +4,7 @@ import CruiseportForm from "../components/cruisport-form";
 import FeatureImage from '../components/featureImage'
 import PageHeader from "../components/pageHeader";
 import Service from "../components/service";
+import styles from '../styles/Services.module.css'
 
 function Services({servicesData}) {
     const mainImge = servicesData.mainImage;
@@ -18,7 +19,7 @@ function Services({servicesData}) {
             <PageHeader pagetitle={pageTitle} intro={pageIntro} />
             {services.map((service,idx) => {
               return (
-                <>
+                <div key={idx} className={styles.serviceWrapper}>
                   <Service 
                     key={idx} 
                     serviceTitle={service.serviceTitle} 
@@ -27,7 +28,7 @@ function Services({servicesData}) {
                     serviceItems={service.serviceOffered}
                   />
                   <CruiseShipSpacer key={idx} offset={(idx + 1) * 20} />
-                </>
+                </div>
               )
             })}
             <CruiseportForm formImage={formImage} />

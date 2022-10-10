@@ -58,6 +58,10 @@ html {
   background-color: #f4f2ea;
 }
 
+html {
+  color: var(--cpdrkblue1);
+}
+
 h1 {
   margin: 0 0 48px;
   font-family: IvyMode, 'serif';
@@ -91,7 +95,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   transition-duration: .3s;
-  color: var(--cpdrkblue2);
+  color: var(--cpdrkblue1);
 }
 
 a:hover,

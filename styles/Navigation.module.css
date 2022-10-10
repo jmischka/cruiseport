@@ -41,7 +41,7 @@
     top: -21px;
     width: calc(1400px - 243px);
     height: 1px;
-    background-color: var(--cpdrkblue2);
+    background-color: var(--cpdrkblue1);
 }
 
 .nav {

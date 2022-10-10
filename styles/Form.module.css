@@ -119,8 +119,8 @@
 }
 
 .cpform button:hover {
-    background-color: var(--cpdrkblue2);
+    background-color: var(--cpdrkblue1);
     color: var(--cpoffwhite);
-    border: 1px solid var(--cpdrkblue2);
+    border: 1px solid var(--cpdrkblue1);
     opacity: 1;
 }
