@@ -37,7 +37,7 @@ export default function Home({homeData}) {
         {servicesList.map((listItem, idx) => {
           return (
             <li key={idx}>
-              <Link href="/services">
+              <Link href={`/services#service-${idx}`}>
                 <a name="services" className={styles.homeServiceLink} onClick={handleLinkClick}>
                   <figure name="services" className={styles.homeServiceImage}>
                     <img name="services" src={urlFor(listItem.homepageServiceImage)} />

@@ -22,6 +22,7 @@ function Services({servicesData}) {
                 <div key={idx} className={styles.serviceWrapper}>
                   <Service 
                     key={idx} 
+                    serviceId={`service-${idx}`}
                     serviceTitle={service.serviceTitle} 
                     serviceImage={service.servicePageImage} 
                     serviceIntro={service.serviceIntro} 

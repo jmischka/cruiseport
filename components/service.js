@@ -6,9 +6,9 @@ function urlFor (source) {
     return imageUrlBuilder(client).image(source)
 }
 
-function Service({serviceTitle, serviceImage, serviceIntro, serviceItems}) {
+function Service({serviceId, serviceTitle, serviceImage, serviceIntro, serviceItems}) {
     return (
-        <div className={styles.wrapper}>
+        <div id={serviceId} className={styles.wrapper}>
             <div className={styles.serviceHeader}>
                 <div className={styles.serviceTitle}>
                     <h1>{serviceTitle}</h1>
