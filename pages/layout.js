@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import { useState } from 'react';
-import Footer from '../components/footer';
-import Navigation from "../components/navigation";
-import { NavigationProvider } from '../components/navigation-context';
+import { useState } from 'react'
+import Footer from '../components/footer'
+import Navigation from '../components/navigation'
+import { NavigationProvider } from '../components/navigation-context'
 
 export default function Layout({ children }) {
     const [linkState, setLinkState] = useState({home: true, about: false, services: false, careers: false, contact: false});

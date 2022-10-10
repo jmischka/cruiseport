@@ -1,4 +1,4 @@
-import client from "../client";
+import client from '../client'
 import FeatureImage from '../components/featureImage'
 import PageHeader from "../components/pageHeader";
 

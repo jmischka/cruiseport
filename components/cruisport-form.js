@@ -1,4 +1,4 @@
-import client from "../client"
+import client from '../client'
 import imageUrlBuilder from '@sanity/image-url'
 import { useState } from 'react';
 import styles from '../styles/Form.module.css'
@@ -24,10 +24,10 @@ function CruiseportForm({formImage}) {
 
     return (
         <div className={styles.wrapper}>
-            <h1 className={styles.formTitle}>Let's Connect</h1>
+            <h1 className={styles.formTitle}>Let&rsquo;s Connect</h1>
             <div className={styles.flexWrapper}>
                 <div className={styles.formWrapper}>
-                    <p>We're here to discuss your needs, answer your questions, and plan our work together.</p>
+                    <p>We&rsquo;re here to discuss your needs, answer your questions, and plan our work together.</p>
                     <form className={styles.cpform} onSubmit={handleFormSubmit}>
                         <input name="firstName" type="text" placeholder='First Name' required value={inputs.firstNmae} onChange={handleInputChange} />
                         <input name="lastName" type="text" placeholder='Last Name' required value={inputs.lastName} onChange={handleInputChange} />

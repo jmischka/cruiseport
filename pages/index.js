@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useContext } from "react";
-import client from "../client";
+import client from '../client'
 import imageUrlBuilder from '@sanity/image-url'
 import CruiseShipSpacer from "../components/cruiseship-spacer";
 import CruiseportForm from "../components/cruisport-form";
