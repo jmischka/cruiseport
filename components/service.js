@@ -1,6 +1,7 @@
 import client from '../client'
 import imageUrlBuilder from '@sanity/image-url'
 import styles from '../styles/Service.module.css'
+import Image from 'next/image'
 
 function urlFor (source) {
     return imageUrlBuilder(client).image(source)
@@ -16,7 +17,13 @@ function Service({serviceId, serviceTitle, serviceImage, serviceIntro, serviceIt
                 </div>
                 <div className={styles.serviceImage}>
                     <figure>
-                        <img src={urlFor(serviceImage)} />
+                        <Image 
+                            src={urlFor(serviceImage).url()}  
+                            alt="Service Image" 
+                            layout="fill" 
+                            objectFit="cover" 
+                            objectPosition="50% 50%" 
+                        />
                     </figure>
                 </div>
             </div>

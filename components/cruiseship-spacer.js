@@ -6,7 +6,7 @@ function CruiseShipSpacer({offset}) {
     return (
         <div className={styles.wrapper}>
             <figure style={{left: `${offset}%`}}>
-                <Image src={brandIcon} />
+                <Image src={brandIcon} alt='Cruiseship graphic' />
             </figure>
         </div>
     )
