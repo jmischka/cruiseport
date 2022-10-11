@@ -44,6 +44,7 @@ function Services({servicesData}) {
     return {
       props: {
         servicesData,
-      }
+      },
+      revalidate: 60,
     }
   }

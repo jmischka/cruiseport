@@ -22,6 +22,7 @@ function Contact({contactData}) {
     return {
       props: {
         contactData,
-      }
+      },
+      revalidate: 60,
     }
   }

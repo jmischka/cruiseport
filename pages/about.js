@@ -21,6 +21,7 @@ function About({aboutData}) {
     return {
       props: {
         aboutData,
-      }
+      },
+      revalidate: 60,
     }
   }
