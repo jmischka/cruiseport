@@ -16,6 +16,7 @@ function HomeFeatureImage({image}) {
                     layout="fill" 
                     objectFit="cover" 
                     objectPosition="50% 100%" 
+                    unoptimized={true}
                     priority 
                 />
             </figure>

@@ -11,7 +11,15 @@ function FeatureImage({image}) {
     return (
         <div className={styles.imageWrapper}>
             <figure className={styles.image}>
-                <Image src={urlFor(image).url()} alt="Hero Image" layout="fill" objectFit="cover" objectPosition="50% 50%" priority />
+                <Image 
+                    src={urlFor(image).url()} 
+                    alt="Hero Image" 
+                    layout="fill" 
+                    objectFit="cover" 
+                    objectPosition="50% 50%" 
+                    unoptimized={true}
+                    priority
+                />
             </figure>
         </div>
     )
