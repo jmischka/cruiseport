@@ -38,8 +38,7 @@
     order: 2;
 }
 
-.formImageWrapper figure,
-.formImageWrapper figure img {
+.formImageWrapper figure {
     position: absolute;
     margin: 0;
     width: 100%;
@@ -49,12 +48,6 @@
 .formImageWrapper figure {
     left: 0;
     top: 0;
-}
-
-.formImageWrapper figure img {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
 }
 
 .cpform {

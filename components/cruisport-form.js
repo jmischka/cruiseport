@@ -2,6 +2,7 @@ import client from '../client'
 import imageUrlBuilder from '@sanity/image-url'
 import { useState } from 'react';
 import styles from '../styles/Form.module.css'
+import Image from 'next/image';
 
 function urlFor (source) {
     return imageUrlBuilder(client).image(source)
@@ -40,7 +41,10 @@ function CruiseportForm({formImage}) {
                     </form>
                 </div>
                 <div className={styles.formImageWrapper}>
-                    {formImage ? <figure><img src={urlFor(formImage)} /></figure> : null}
+                    {formImage 
+                        ? <figure><Image src={urlFor(formImage).url()} alt="Footer Image" layout="fill" objectFit="cover" objectPosition="50% 50%" /></figure> 
+                        : null
+                    }
                 </div>
             </div>
         </div>

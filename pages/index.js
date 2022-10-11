@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useContext } from "react";
+import Image from 'next/image'
 import client from '../client'
 import imageUrlBuilder from '@sanity/image-url'
 import CruiseShipSpacer from "../components/cruiseship-spacer";
@@ -40,7 +41,14 @@ export default function Home({homeData}) {
               <Link href={`/services#service-${idx}`}>
                 <a name="services" className={styles.homeServiceLink} onClick={handleLinkClick}>
                   <figure name="services" className={styles.homeServiceImage}>
-                    <img name="services" src={urlFor(listItem.homepageServiceImage)} />
+                    <Image 
+                      src={urlFor(listItem.homepageServiceImage).url()} 
+                      name="services" 
+                      alt="Service Image" 
+                      layout="fill" 
+                      objectFit="cover" 
+                      objectPosition="50% 50%" 
+                    />
                   </figure>
                   <span name="services" className={styles.homeServiceTitle}>{listItem.homepageServiceTitle}</span>
                 </a>
