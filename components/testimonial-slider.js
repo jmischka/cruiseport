@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 import styles from '../styles/TestimonialSlider.module.css'
 
+const backgroundColors = ['#a6cfc5', '#558aa8', '#8cc1c3', '#1f4463'];
+
 function TestimonialSlider({testimonials}) {
     const [testimonialIndex, setTestimonialIndex] = useState(0);
+    const [colorIndex, setColorIndex] = useState(0);
     const testimonialLength = testimonials.length;
 
     const widthStyle = {
@@ -15,6 +18,11 @@ function TestimonialSlider({testimonials}) {
         if (operation === 'forward') {
             if (testimonialIndex < testimonialLength - 1) {
                 setTestimonialIndex(testimonialIndex + 1);
+                if (colorIndex < backgroundColors.length - 1) {
+                    setColorIndex(colorIndex + 1);
+                } else {
+                    setColorIndex(0);
+                }
             } else {
                 setTestimonialIndex(0);
             }
@@ -23,6 +31,11 @@ function TestimonialSlider({testimonials}) {
         if (operation === 'back') {
             if (testimonialIndex > 0) {
                 setTestimonialIndex(testimonialIndex - 1);
+                if (colorIndex > 0 && testimonialIndex !== 0) {
+                    setColorIndex(colorIndex - 1);
+                } else {
+                    setColorIndex(backgroundColors.length - 1);
+                }
             }
         }
     }
@@ -34,7 +47,7 @@ function TestimonialSlider({testimonials}) {
     }, [testimonialIndex])
     
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} style={{backgroundColor: `${backgroundColors[colorIndex]}`}}>
             <div className={styles.innerWrapper}>
                 <div className={styles.sliderWindow}>
                     <div className={styles.slideTray + " slide-tray"} style={widthStyle}>

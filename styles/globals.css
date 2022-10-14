@@ -48,14 +48,14 @@ html {
 }
 
 html {
-  --cpturqoise1: #9bd0c5;
-  --cpturqoise2: #7dc2c4;
-  --cplightblue1: #448bab;
-  --cplightblue2: #326993;
-  --cpdrkblue1: #294b7e;
-  --cpdrkblue2: #2e3469;
-  --cpoffwhite: #f4f2ea;
-  background-color: #f4f2ea;
+  --cpturqoise1: #a6cfc5;
+  --cpturqoise2: #8cc1c3;
+  --cpdrkblue1: #1f4463;
+  --cpdrkblue2: #3f6990;
+  --cpdrkblue3: #558aa8;
+  --cpdrkblue1light: #1f4463;
+  --cpoffwhite: #f4f2eb;
+  background-color: #f4f2eb;
 }
 
 html {

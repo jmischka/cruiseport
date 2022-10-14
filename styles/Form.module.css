@@ -109,7 +109,7 @@
     margin: 20px 0 0;
     padding: 9px 16px;
     cursor: pointer;
-    border: 1px solid #9aabb8;
+    border: .7px solid var(--cpdrkblue1light);
     background: -moz-linear-gradient(top,  rgba(41,75,126,0.2) 0%, rgba(41,137,216,0.1) 50%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(41,75,126,0.2) 0%,rgba(41,137,216,0.1) 50%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(41,75,126,0.2) 0%,rgba(41,137,216,0.1) 50%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */

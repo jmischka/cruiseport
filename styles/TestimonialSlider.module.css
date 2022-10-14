@@ -3,7 +3,8 @@
     margin: 135px 0 147px;
     width: 100%;
     height: auto;
-    background-color: var(--cpturqoise2);
+    /* background-color: var(--cpturqoise2); */
+    transition-duration: 1s;
 }
 
 .innerWrapper {
@@ -60,6 +61,7 @@
     opacity: .5;
     transition-duration: .5s;
     cursor: pointer;
+    z-index: 10;;
 }
 
 .directionalForward {
