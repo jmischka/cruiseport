@@ -49,25 +49,22 @@
 .featureImageTitleMajor,
 .featureImageTitleLocation {
     display: block;
-    font-family: IvyMode, 'serif';
-    line-height: 1;
+    line-height: 1.2;
     width: 100%;
     height: auto;
     text-align: center;
     color: var(--cpdrkblue1);
 }
 
-.featureImageTitleMinor,
-.featureImageTitleMajor {
-    margin: 0 0 12px;
-}
-
 .featureImageTitleMinor {
-    font-size: 48px;
+    margin: 0 0 6px;
+    font-size: 40px;
 }
 
 .featureImageTitleMajor {
-    font-size: 72px;
+    margin: 0 0 14px;
+    font-family: IvyMode, 'serif';
+    font-size: 74px;
     text-transform: uppercase;
 }
 
