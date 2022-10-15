@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from '../styles/TestimonialSlider.module.css'
 
-const backgroundColors = ['#a6cfc5', '#558aa8', '#8cc1c3', '#1f4463'];
+const backgroundColors = ['#67abae', '#1f4463', '#3f6990', '#80c4b0'];
 
 function TestimonialSlider({testimonials}) {
     const [testimonialIndex, setTestimonialIndex] = useState(0);
@@ -16,22 +16,25 @@ function TestimonialSlider({testimonials}) {
         const operation = e.target.id;
 
         if (operation === 'forward') {
+            // SET TESTIMONIAL INDEX
             if (testimonialIndex < testimonialLength - 1) {
                 setTestimonialIndex(testimonialIndex + 1);
-                if (colorIndex < backgroundColors.length - 1) {
-                    setColorIndex(colorIndex + 1);
-                } else {
-                    setColorIndex(0);
-                }
             } else {
                 setTestimonialIndex(0);
+            }
+            // SET COLOR INDEX
+            if (colorIndex < backgroundColors.length - 1) {
+                setColorIndex(colorIndex + 1);
+            } else {
+                setColorIndex(0);
             }
         }
         
         if (operation === 'back') {
+            // SET TESTIMONIAL INDEX AND COLOR INDEX
             if (testimonialIndex > 0) {
                 setTestimonialIndex(testimonialIndex - 1);
-                if (colorIndex > 0 && testimonialIndex !== 0) {
+                if (colorIndex > 0) {
                     setColorIndex(colorIndex - 1);
                 } else {
                     setColorIndex(backgroundColors.length - 1);
@@ -45,7 +48,7 @@ function TestimonialSlider({testimonials}) {
         const testimonials = Array.from(document.querySelector('.slide-tray').children);
         tray.style.left = `-${testimonials[testimonialIndex].offsetLeft}px`;
     }, [testimonialIndex])
-    
+
     return (
         <div className={styles.wrapper} style={{backgroundColor: `${backgroundColors[colorIndex]}`}}>
             <div className={styles.innerWrapper}>
