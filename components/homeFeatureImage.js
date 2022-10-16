@@ -1,7 +1,18 @@
 import client from '../client'
 import imageUrlBuilder from '@sanity/image-url'
 import styles from '../styles/Featureimage.module.css'
+import Marquee from "react-fast-marquee";
 import Image from 'next/image'
+
+const words = ['Welcome', 'Bienvenidos', 'Wilkommen', 'Yokoso', 'Benvenuto', 'Merhaba', 'Kalos', 'Irthate', 'Huanying', 'Shalom'];
+
+const Ticker = ({words}) => {
+    return (
+        <div className={styles.tickerWrapper}>
+            {words.map((word,idx) => <span key={idx}>{word}</span>)}
+        </div>
+    )
+}
 
 function urlFor (source) {
     return imageUrlBuilder(client).image(source)
@@ -26,16 +37,9 @@ function HomeFeatureImage({image}) {
                 <span className={styles.featureImageTitleLocation}>Miami, South & Central Florida</span>
             </div>
             <div className={styles.homeWelcomeTicker}>
-                <span>Welcome</span>
-                <span>Bienvenidos</span>
-                <span>Wilkommen</span>
-                <span>Yokoso</span>
-                <span>Benvenuto</span>
-                <span>Merhaba</span>
-                <span>Kalos</span>
-                <span>Irthate</span>
-                <span>Huanying</span>
-                <span>Shalom</span>
+                <Marquee gradient={false}>
+                    <Ticker words={words} />
+                </Marquee>
             </div>
         </div>
     )
