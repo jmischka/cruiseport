@@ -1,0 +1,24 @@
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 0 75px;
+    max-width: 1400px;
+}
+
+.pageButton {
+    display: block !important;
+    width: 125px;
+    text-align: center;
+    text-transform: none !important;
+    padding: 12px !important;
+    border: 1px solid var(--cpdrkblue1) !important;
+    background-color: none;
+    color: var(--cpdrkblue1) !important;
+    transition-duration: .3s;
+}
+
+.pageButton:hover {
+    background-color: var(--cpdrkblue1);
+    color: var(--cpoffwhite) !important;
+}

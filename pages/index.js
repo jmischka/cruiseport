@@ -10,6 +10,7 @@ import { NavigationContext } from "../components/navigation-context";
 import PageHeader from "../components/pageHeader";
 import TestimonialSlider from "../components/testimonial-slider";
 import styles from '../styles/Home.module.css'
+import ClientSlider from "../components/client-slider";
 
 function urlFor (source) {
   return imageUrlBuilder(client).image(source)
@@ -24,6 +25,7 @@ export default function Home({homeData}) {
   const servicesIntro = homeData.homeServicesText;
   const servicesList = homeData.homeServicesReference;
   const testimonials = homeData.homeTestimonials;
+  const clients = homeData.homeClients;
   const formImage = homeData.footerContactImage;
 
   const {handleLinkClick} = useContext(NavigationContext);
@@ -60,6 +62,7 @@ export default function Home({homeData}) {
       <CruiseShipSpacer offset={60} />
       <TestimonialSlider testimonials={testimonials} />
       <CruiseShipSpacer offset={85} />
+      <ClientSlider clients={clients} />
       <CruiseportForm formImage={formImage} />
     </div>
   )

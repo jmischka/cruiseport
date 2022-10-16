@@ -1,7 +1,6 @@
 import { useContext } from 'react'
 import styles from '../styles/Navigation.module.css'
-import brandIcon from '../public/brand-icon.png'
-import logo from '../public/Logo-Type.png'
+import logo from '../public/CPD_Logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { NavigationContext } from './navigation-context'
@@ -12,11 +11,8 @@ function Navigation() {
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
-                <div className={styles.brandicon}>
-                    <Image src={brandIcon} alt='brand icon' priority />
-                </div>
                 <div className={styles.branding}>
-                    <Image src={logo} alt='branding' priority />
+                    <Image src={logo} alt='branding' priority='true' />
                 </div>
                 <nav className={styles.nav}>
                     <ul>

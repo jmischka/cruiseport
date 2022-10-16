@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from '../styles/TestimonialSlider.module.css'
 
-const backgroundColors = ['#67abae', '#1f4463', '#3f6990', '#80c4b0'];
+const backgroundColors = ['#67abae', '#E6EADE', '#3f6990', '#80c4b0'];
 
 function TestimonialSlider({testimonials}) {
     const [testimonialIndex, setTestimonialIndex] = useState(0);
@@ -54,12 +54,12 @@ function TestimonialSlider({testimonials}) {
             <div className={styles.innerWrapper}>
                 <div className={styles.sliderWindow}>
                     <div className={styles.slideTray + " slide-tray"} style={widthStyle}>
-                        {testimonials.map((testimonial, idx) => <span key={idx} className={styles.testimonial}>{testimonial.testimonialText[0].children[0].text}</span>)}
+                        {testimonials.map((testimonial, idx) => <span key={idx} className={styles.testimonial} style={colorIndex === 1 ? {color: '#1f4463'} : {color: '#f4f2eb'}}>{testimonial.testimonialText[0].children[0].text}</span>)}
                     </div>
                 </div>
             </div>
-            <span id="forward" className={styles.directionalForward} onClick={handleOperatorClick}></span>
-            <span id="back" className={styles.directionalBack} onClick={handleOperatorClick}></span>
+            <span id="forward" className={styles.directionalForward} style={colorIndex === 1 ? {borderRight: '5px solid #1f4463', borderTop: '5px solid #1f4463'} : {borderRight: '5px solid #f4f2eb', borderTop: '5px solid #f4f2eb'}} onClick={handleOperatorClick}></span>
+            <span id="back" className={styles.directionalBack} style={colorIndex === 1 ? {borderLeft: '5px solid #1f4463', borderBottom: '5px solid #1f4463'} : {borderLeft: '5px solid #f4f2eb', borderBottom: '5px solid #f4f2eb'}} onClick={handleOperatorClick}></span>
         </div>
     )
 }

@@ -35,11 +35,12 @@
 
 .footerBranding {
     width: 33.333%;
-    max-width: 300px;
-    padding: 0 25px;
+    max-width: 350px;
+    padding: 0 0 0 25px;
 }
 
 .footerNavigation {
+    margin: 47px 0 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -67,7 +68,7 @@
 
 .navHeader {
     display: block;
-    margin: -65px 0 50px;
+    margin: 0 0 25px;
     font-size: 16px;
     line-height: 1;
     font-weight: normal;
