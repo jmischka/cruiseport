@@ -61,8 +61,8 @@ export default function Home({homeData}) {
       </ul>
       <CruiseShipSpacer offset={60} />
       <TestimonialSlider testimonials={testimonials} />
-      <CruiseShipSpacer offset={85} />
       <ClientSlider clients={clients} />
+      <CruiseShipSpacer offset={85} />
       <CruiseportForm formImage={formImage} />
     </div>
   )
