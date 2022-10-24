@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import styles from '../styles/Navigation.module.css'
-import logo from '../public/CPD_Logo.png'
+import logotwo from '../public/CPD_logotwo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { NavigationContext } from './navigation-context'
@@ -12,7 +12,7 @@ function Navigation() {
         <div className={styles.wrapper}>
             <div className={styles.container}>
                 <div className={styles.branding}>
-                    <Image src={logo} alt='branding' priority='true' />
+                    <Image src={logotwo} alt='branding' priority='true' />
                 </div>
                 <nav className={styles.nav}>
                     <ul>
