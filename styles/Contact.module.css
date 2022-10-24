@@ -1,0 +1,24 @@
+.careersMention {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1450px;
+    height: auto;
+    padding: 50px 25px;
+}
+
+.careersButton {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+    width: 125px;
+    padding: 14px 12px 12px;
+    border: 1px solid var(--cpdrkblue1);
+    transition-duration: .5s;
+}
+
+.careersButton:hover {
+    background-color: var(--cpdrkblue1);
+}

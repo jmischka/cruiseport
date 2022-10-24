@@ -37,7 +37,7 @@ function HomeFeatureImage({image}) {
                 <span className={styles.featureImageTitleLocation}>Miami, South & Central Florida</span>
             </div>
             <div className={styles.homeWelcomeTicker}>
-                <Marquee gradient={false}>
+                <Marquee gradient={false} speed={40}>
                     <Ticker words={words} />
                 </Marquee>
             </div>

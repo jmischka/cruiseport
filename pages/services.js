@@ -17,6 +17,7 @@ function Services({servicesData}) {
         <div>
             <FeatureImage image={mainImge} />
             <PageHeader pagetitle={pageTitle} intro={pageIntro} />
+            <CruiseShipSpacer offset={7} />
             {services.map((service,idx) => {
               return (
                 <div key={idx} className={styles.serviceWrapper}>
