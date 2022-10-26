@@ -12,15 +12,14 @@ function Navigation() {
         <div className={styles.wrapper}>
             <div className={styles.container}>
                 <div className={styles.branding}>
-                    <Image src={logotwo} alt='branding' priority='true' />
+                    <Link href="/">
+                        <a name="home" className={styles.brandingLink} onClick={handleLinkClick}>
+                            <Image name="home" src={logotwo} alt='branding' priority='true' onClick={handleLinkClick} />
+                        </a>
+                    </Link>
                 </div>
                 <nav className={styles.nav}>
                     <ul>
-                        <li>
-                            <Link href="/">
-                                <a name="home" className={linkState.home ? 'active' : null} onClick={handleLinkClick}>Home</a>
-                            </Link>
-                        </li>
                         <li>
                             <Link href="/about">
                                 <a name="about" className={linkState.about ? 'active' : null} onClick={handleLinkClick}>About</a>

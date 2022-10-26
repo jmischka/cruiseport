@@ -1,4 +1,5 @@
 import client from '../client'
+import CruiseShipSpacer from '../components/cruiseship-spacer';
 import CruiseportForm from '../components/cruisport-form';
 import FeatureImage from '../components/featureImage'
 import PageHeader from "../components/pageHeader";
@@ -12,6 +13,7 @@ function About({aboutData}) {
         <div>
             <FeatureImage image={mainImage} />
             <PageHeader pagetitle={pageTitle} intro={pageIntro} />
+            <CruiseShipSpacer offset={30} />
             <CruiseportForm formImage={formImage} />
         </div>
     )
