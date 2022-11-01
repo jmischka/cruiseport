@@ -1,4 +1,5 @@
 import client from '../client'
+import CruiseportForm from '../components/cruisport-form';
 import FeatureImage from '../components/featureImage';
 import PageHeader from '../components/pageHeader';
 import styles from '../styles/Careers.module.css'
@@ -7,6 +8,7 @@ function Careers({careersData}) {
     const mainImage = careersData.mainImage;
     const pageTitle = careersData.careerIntroTitle;
     const pageIntro = careersData.careerIntroText;
+    const formImage = careersData.careersFooterContactImage;
 
     return (
         <div>
@@ -15,6 +17,7 @@ function Careers({careersData}) {
            <div className={styles.wrapper}>
                 <a href="mailto:info@cruiseportdestinations.com" className={styles.pageButton}>Email Us</a>
            </div>
+           <CruiseportForm formImage={formImage} />
         </div>
     )
   }
