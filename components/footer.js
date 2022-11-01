@@ -1,6 +1,5 @@
 import { useContext } from 'react'
-import logo from '../public/CPD_Logo.png'
-import logotwo from '../public/CPD_logotwo.png'
+import logothree from '../public/CPD_logothree.png'
 import Image from 'next/image'
 import Link from 'next/link';
 import styles from '../styles/FooterStyles.module.css'
@@ -14,7 +13,7 @@ function Footer() {
             <div className={styles.innerWrapper}>
                 <div className={styles.footerNavWrapper}>
                     <div className={styles.footerBranding}>
-                        <Image src={logotwo} alt='branding' />
+                        <Image src={logothree} alt='branding' />
                     </div>
                     <div className={styles.footerNavigation}>
                         <div className={styles.site}>

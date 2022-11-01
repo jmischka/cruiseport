@@ -62,21 +62,25 @@
     height: auto;
     text-align: center;
     color: var(--cpdrkblue1);
+    transition-duration: .5s;
 }
 
 .featureImageTitleMinor {
     margin: 0 0 6px;
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: calc(30px + (40 - 30) * ((100vw - 900px) / (1600 - 900)));
 }
 
 .featureImageTitleMajor {
     margin: 0 0 14px;
     font-family: IvyMode, 'serif';
-    font-size: 74px;
+    /* font-size: 74px; */
+    font-size: calc(48px + (74 - 48) * ((100vw - 900px) / (1600 - 900)));
     text-transform: uppercase;
 }
 
 .featureImageTitleLocation {
     margin: 0;
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: calc(16px + (24 - 16) * ((100vw - 900px) / (1600 - 900)));
 }

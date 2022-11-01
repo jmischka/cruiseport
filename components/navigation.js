@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import styles from '../styles/Navigation.module.css'
-import logotwo from '../public/CPD_logotwo.png'
+import logothree from '../public/CPD_logothree.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { NavigationContext } from './navigation-context'
@@ -14,7 +14,7 @@ function Navigation() {
                 <div className={styles.branding}>
                     <Link href="/">
                         <a name="home" className={styles.brandingLink} onClick={handleLinkClick}>
-                            <Image name="home" src={logotwo} alt='branding' priority='true' onClick={handleLinkClick} />
+                            <Image name="home" src={logothree} alt='branding' priority='true' onClick={handleLinkClick} />
                         </a>
                     </Link>
                 </div>
