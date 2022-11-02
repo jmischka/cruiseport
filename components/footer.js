@@ -37,11 +37,11 @@ function Footer() {
                         <div className={styles.contact}>
                             <span className={styles.navHeader}>Contact</span>
                             <ul className={styles.navList}>
-                                <li>info@cruiseportdestinations.com</li>
+                                <li><a href="mailto:info@cruiseportdestinations.com">info@cruiseportdestinations.com</a></li>
                                 <li className={styles.phone}>800.222.3456</li>
                                 <li>SOCIAL</li>
-                                <li>Facebook</li>
-                                <li>Instagram</li>
+                                <li><a target="_blank" href='https://www.facebook.com/cruiseportdestinationsgroundhandler/'>Facebook</a></li>
+                                <li><a target="_blank" href='https://www.instagram.com/cruiseportdestinations/?hl=en'>Instagram</a></li>
                             </ul>
                         </div>
                     </div>

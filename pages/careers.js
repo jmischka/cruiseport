@@ -1,4 +1,5 @@
 import client from '../client'
+import CruiseShipSpacer from '../components/cruiseship-spacer';
 import CruiseportForm from '../components/cruisport-form';
 import FeatureImage from '../components/featureImage';
 import PageHeader from '../components/pageHeader';
@@ -17,6 +18,7 @@ function Careers({careersData}) {
            <div className={styles.wrapper}>
                 <a href="mailto:info@cruiseportdestinations.com" className={styles.pageButton}>Email Us</a>
            </div>
+           <CruiseShipSpacer offset={30} />
            <CruiseportForm formImage={formImage} />
         </div>
     )
