@@ -40,8 +40,8 @@ function Footer() {
                                 <li><a href="mailto:info@cruiseportdestinations.com">info@cruiseportdestinations.com</a></li>
                                 <li className={styles.phone}>800.222.3456</li>
                                 <li>SOCIAL</li>
-                                <li><a target="_blank" href='https://www.facebook.com/cruiseportdestinationsgroundhandler/'>Facebook</a></li>
-                                <li><a target="_blank" href='https://www.instagram.com/cruiseportdestinations/?hl=en'>Instagram</a></li>
+                                <li><a target="_blank" rel="noreferrer" href='https://www.facebook.com/cruiseportdestinationsgroundhandler/'>Facebook</a></li>
+                                <li><a target="_blank" rel="noreferrer" href='https://www.instagram.com/cruiseportdestinations/?hl=en'>Instagram</a></li>
                             </ul>
                         </div>
                     </div>
