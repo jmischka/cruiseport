@@ -10,12 +10,14 @@ function About({aboutData}) {
     const pageIntro = aboutData.aboutIntroText;
     const formImage = aboutData.aboutFooterContactImage;
     return (
-        <div>
-            <FeatureImage image={mainImage} />
-            <PageHeader pagetitle={pageTitle} intro={pageIntro} />
-            <CruiseShipSpacer offset={30} />
-            <CruiseportForm formImage={formImage} />
+      <div>
+        <FeatureImage image={mainImage} />
+        <div className='contentWrapper'>
+          <PageHeader pagetitle={pageTitle} intro={pageIntro} />
+          <CruiseShipSpacer offset={30} />
+          <CruiseportForm formImage={formImage} />
         </div>
+      </div>
     )
   }
   

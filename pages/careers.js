@@ -14,12 +14,14 @@ function Careers({careersData}) {
     return (
         <div>
            <FeatureImage image={mainImage} />
-           <PageHeader pagetitle={pageTitle} intro={pageIntro} />
-           <div className={styles.wrapper}>
+           <div className='contentWrapper'>
+            <PageHeader pagetitle={pageTitle} intro={pageIntro} />
+            <div className={styles.wrapper}>
                 <a href="mailto:info@cruiseportdestinations.com" className={styles.pageButton}>Email Us</a>
+            </div>
+            <CruiseShipSpacer offset={30} />
+            <CruiseportForm formImage={formImage} />
            </div>
-           <CruiseShipSpacer offset={30} />
-           <CruiseportForm formImage={formImage} />
         </div>
     )
   }

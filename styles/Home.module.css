@@ -1,3 +1,9 @@
+.contentWrapper {
+  margin: 0;
+  position: relative;
+  background-color: var(--cpoffwhite);
+}
+
 .servicesList {
   position: relative;
   display: flex;

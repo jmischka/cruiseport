@@ -12,10 +12,12 @@ function Contact({contactData}) {
     return (
         <div>
             <FeatureImage image={mainImage} />
-            <CruiseportForm />
-            <div className={styles.careersMention}>
-              <p>Interested in joining our team?</p>
-              <Link href="/careers"><a name="careers" className={styles.careersButton} onClick={handleLinkClick}>Careers</a></Link>
+            <div className='contentWrapper'>
+              <CruiseportForm />
+              <div className={styles.careersMention}>
+                <p>Interested in joining our team?</p>
+                <Link href="/careers"><a name="careers" className={styles.careersButton} onClick={handleLinkClick}>Careers</a></Link>
+              </div>
             </div>
         </div>
     )

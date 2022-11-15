@@ -16,24 +16,26 @@ function Services({servicesData}) {
     return (
         <div>
             <FeatureImage image={mainImge} />
-            <PageHeader pagetitle={pageTitle} intro={pageIntro} />
-            <CruiseShipSpacer offset={7} />
-            {services.map((service,idx) => {
-              return (
-                <div key={idx} className={styles.serviceWrapper}>
-                  <Service 
-                    key={idx} 
-                    serviceId={`service-${idx}`}
-                    serviceTitle={service.serviceTitle} 
-                    serviceImage={service.servicePageImage} 
-                    serviceIntro={service.serviceIntro} 
-                    serviceItems={service.serviceOffered}
-                  />
-                  <CruiseShipSpacer key={idx} offset={(idx + 1) * 20} />
-                </div>
-              )
-            })}
-            <CruiseportForm formImage={formImage} />
+            <div className="contentWrapper">
+              <PageHeader pagetitle={pageTitle} intro={pageIntro} />
+              <CruiseShipSpacer offset={7} />
+              {services.map((service,idx) => {
+                return (
+                  <div key={idx} className={styles.serviceWrapper}>
+                    <Service 
+                      key={idx} 
+                      serviceId={`service-${idx}`}
+                      serviceTitle={service.serviceTitle} 
+                      serviceImage={service.servicePageImage} 
+                      serviceIntro={service.serviceIntro} 
+                      serviceItems={service.serviceOffered}
+                    />
+                    <CruiseShipSpacer key={idx} offset={(idx + 1) * 20} />
+                  </div>
+                )
+              })}
+              <CruiseportForm formImage={formImage} />
+            </div>
         </div>
     )
   }

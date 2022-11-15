@@ -33,37 +33,39 @@ export default function Home({homeData}) {
   return (
     <div>
       <HomeFeatureImage image={mainImage} />
-      <PageHeader pagetitle={pageTitle} intro={pageIntro} headerButton={headerButton} />
-      <CruiseShipSpacer offset={30} />
-      <PageHeader pagetitle={servicesTitle} intro={servicesIntro} />
-      <ul className={styles.servicesList}>
-        {servicesList.map((listItem, idx) => {
-          return (
-            <li key={idx}>
-              <Link href={`/services#service-${idx}`}>
-                <a name="services" className={styles.homeServiceLink} onClick={handleLinkClick}>
-                  <figure name="services" className={styles.homeServiceImage}>
-                    <Image 
-                      src={urlFor(listItem.homepageServiceImage).url()} 
-                      name="services" 
-                      alt="Service Image" 
-                      layout="fill" 
-                      objectFit="cover" 
-                      objectPosition="50% 50%" 
-                    />
-                  </figure>
-                  <span name="services" className={styles.homeServiceTitle}>{listItem.homepageServiceTitle}</span>
-                </a>
-              </Link>
-            </li>
-          )
-        })}
-      </ul>
-      <CruiseShipSpacer offset={60} />
-      <TestimonialSlider testimonials={testimonials} />
-      <ClientSlider clients={clients} />
-      <CruiseShipSpacer offset={85} />
-      <CruiseportForm formImage={formImage} />
+      <div className={styles.contentWrapper}>
+        <PageHeader pagetitle={pageTitle} intro={pageIntro} headerButton={headerButton} />
+        <CruiseShipSpacer offset={30} />
+        <PageHeader pagetitle={servicesTitle} intro={servicesIntro} />
+        <ul className={styles.servicesList}>
+          {servicesList.map((listItem, idx) => {
+            return (
+              <li key={idx}>
+                <Link href={`/services#service-${idx}`}>
+                  <a name="services" className={styles.homeServiceLink} onClick={handleLinkClick}>
+                    <figure name="services" className={styles.homeServiceImage}>
+                      <Image 
+                        src={urlFor(listItem.homepageServiceImage).url()} 
+                        name="services" 
+                        alt="Service Image" 
+                        layout="fill" 
+                        objectFit="cover" 
+                        objectPosition="50% 50%" 
+                      />
+                    </figure>
+                    <span name="services" className={styles.homeServiceTitle}>{listItem.homepageServiceTitle}</span>
+                  </a>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+        <CruiseShipSpacer offset={60} />
+        <TestimonialSlider testimonials={testimonials} />
+        <ClientSlider clients={clients} />
+        <CruiseShipSpacer offset={85} />
+        <CruiseportForm formImage={formImage} />
+      </div>
     </div>
   )
 }
